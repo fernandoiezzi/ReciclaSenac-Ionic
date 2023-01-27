@@ -1,0 +1,60 @@
+<ion-content>
+
+
+<br/>
+<ion-item href="/home">
+<div class="logo">
+  <ion-img src="../../assets/logos/logo1-nobg.png"></ion-img>
+</div>
+</ion-item>
+
+<br/>
+<br/>
+<br/>
+
+<div class="input-div">
+  <ion-item>
+    <ion-label class="nome-label"> Nome de usuário </ion-label> <br/><br/>
+  </ion-item>
+  <ion-item>
+    <ion-input class="inputs" type="text" [(ngModel)]="model.nome" placeholder="Insira o seu nome de usuário"></ion-input>
+  </ion-item>
+</div>
+
+<div class="input-div">
+  <ion-item>
+    <ion-label class="nome-label"> Digite o seu e-mail </ion-label> <br/><br/>
+  </ion-item>
+  <ion-item>
+    <ion-input class="inputs" type="email" [(ngModel)]="model.email" placeholder="Insira o e-mail"></ion-input>
+  </ion-item>
+</div>
+
+<div class="input-div">
+  <ion-item>
+    <ion-label class="nome-label"> Senha </ion-label> <br/><br/>
+  </ion-item>
+  <ion-item>
+    <ion-input class="inputs" type="password" [(ngModel)]="model.senha" placeholder=" Digite a sua senha"></ion-input>
+  </ion-item>
+</div>
+
+<br/>
+
+<div class="button-2">
+  <ion-button>
+    <ion-button type="submit" (click)="createAccount()"> Cadastrar </ion-button>
+  </ion-button>
+</div>
+
+<br/>
+
+<ion-item href="/login">
+  <div class="criar-conta">
+    <h5><strong> Você já tem a sua conta? </strong></h5>
+    <h5> Entre agora mesmo! </h5>
+  </div>
+  </ion-item>
+
+
+</ion-content>

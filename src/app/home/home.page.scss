@@ -1,0 +1,49 @@
+#container {
+  text-align: center;
+  padding-bottom: 10px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#container strong {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+#container p {
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #8c8c8c;
+
+  margin: 0;
+}
+
+#container a {
+  text-decoration: none;
+}
+
+.strong-1 {
+  font-size: 40px;
+  padding-bottom:30px;
+}
+
+.button-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  max-width: 70%;
+  padding-top: 0%;
+  align-items: center;
+  justify-content:baseline;
+  display: flex;
+  margin: 0px;
+  position: fixed;
+
+}
