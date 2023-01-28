@@ -1,21 +1,70 @@
-<ion-content>
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Tipos de Lixo
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
 
-  <div class=logo>
-    <ion-img src="../../assets/logos/logo1-nobg.png"></ion-img>
-  </div>
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Blank</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
   <div id="container">
-    <h1 class="strong-1">Precisa reciclar o seu lixo, e não sabe aonde?
-    </h1>
-    <br>
-    <br>
-    <p> Não se preocupa, nós fazemos isso para você!</p>
-    <br>
-    <br>
-    <br>
-<div class="button-1">
-  <ion-button href="/login">Iniciar</ion-button>
-</div>
-</div>
-
-
+    <h1>Selecione o Tipo de Lixo</h1>
+    
+    <ion-item>
+      <ion-checkbox slot="start"></ion-checkbox>
+      <ion-label>Papel</ion-label>
+      <ion-icon name="receipt-outline"></ion-icon>
+    </ion-item>
+    <ion-item>
+      <ion-checkbox slot="start"></ion-checkbox>
+      <ion-label>Metal</ion-label>
+      <ion-icon name="settings-outline"></ion-icon>
+    </ion-item>
+    <ion-item>
+      <ion-checkbox slot="start"></ion-checkbox>
+      <ion-label>Plástico</ion-label>
+      <ion-icon name="restaurant-outline"></ion-icon>
+    </ion-item>
+    <ion-item>
+      <ion-checkbox slot="start"></ion-checkbox>
+      <ion-label>Vidro</ion-label>
+      <ion-icon name="wine-outline"></ion-icon>
+    </ion-item>
+    <ion-item>
+      <ion-checkbox slot="start"></ion-checkbox>
+      <ion-label>Lixo Eletrônico</ion-label>
+      <ion-icon name="game-controller-outline"></ion-icon>
+    </ion-item>
+    <ion-item>
+      <ion-checkbox slot="start"></ion-checkbox>
+      <ion-label>Lixo Hospiltalar/Radioativo</ion-label>
+      <ion-icon name="medkit-outline"></ion-icon>
+    </ion-item>
+    <ion-list>
+      <ion-item>
+        <ion-label>Digite o seu Endereço:</ion-label>
+        <ion-input placeholder="Digite o seu Endereço"></ion-input>
+      </ion-item>
+    
+      <ion-item>
+        <ion-label>Digite o seu CEP:</ion-label>
+        <ion-input placeholder="Digite o seu CEP"></ion-input>
+      </ion-item>
+    
+      <ion-item>
+        <ion-label>Digite o seu Bairro:</ion-label>
+        <ion-input placeholder="Digite o seu Bairro"></ion-input>
+      </ion-item>
+    </ion-list>
+    <ion-button type="subimt" (click)="Enviar()">Enviar Reciclagem</ion-button>
+    <ion-content>
+      <div id="map" #map></div>
+    </ion-content>
+  </div>
 </ion-content>
